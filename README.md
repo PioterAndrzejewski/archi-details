@@ -80,6 +80,14 @@ To be continued...
 🟡 - in progress,
 ❔ - future task,
 ❌ - overdue,
+### 27.02.2023 - 5.03.2023
+
+1) Preparation of specification, defining main project features ✔️ 27.02.2023
+2) Kick-off meeting with mentor about the project ✔️ 1.03.2023
+3) Prepare a schedule, make it public in Readme ✔️3.03.2023
+4) Decide about core libraries and technologies used in project ✔️ 1.03.2023
+5) Setup project environment, make first commit ✔️ 3.03.2023
+6) Create landing-page template 🟡
 
 ### 1.03.2023 - 5.03.2023
 
