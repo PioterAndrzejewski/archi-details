@@ -6,7 +6,7 @@
 
 ---
   
- ⚠️⚠️ 03.03.2023 Disclaimer: It is just the beginning of the project. [Look at the schedule](#-the-schedule) and follow the changes!  ⚠️⚠️
+ ⚠️ 03.03.2023 Disclaimer: It is just the beginning of the project. [Look at the schedule](#-the-schedule) and follow the changes!  ⚠️
   
 
 ## 🤔 **What is this project all about and what needs does it solve?**
