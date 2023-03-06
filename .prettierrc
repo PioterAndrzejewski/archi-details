@@ -17,20 +17,6 @@
   "trailingComma": "es5",
   "useTabs": false,
   "vueIndentScriptAndStyle": false,
-  "importOrder": [
-    "react$|^react-(.)|styled-components",
-    "@wakacje",
-    "next",
-    "constants|routes",
-    "react-hook-form|hooks|(.)/use(.*)$",
-    "stores",
-    "helpers|utils|api",
-    "elements|ui",
-    "components",
-    "containers",
-    "public",
-    "types"
-  ],
   "importOrderSeparation": true,
   "importOrderSortSpecifiers": true
 }
