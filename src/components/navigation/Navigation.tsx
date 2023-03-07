@@ -44,7 +44,7 @@ export const Navigation = () => {
   return (
     <>
       <Box
-        bg={useColorModeValue('gray.100', 'gray.900')}
+        bg='gray.400'
         px={4}
       >
         <Flex
@@ -79,7 +79,7 @@ export const Navigation = () => {
           <Flex alignItems='center'>
             <Button
               variant='solid'
-              colorScheme='teal'
+              colorScheme='blue'
               size='sm'
               mr={4}
               leftIcon={<AddIcon />}
@@ -125,8 +125,6 @@ export const Navigation = () => {
           </Box>
         ) : null}
       </Box>
-
-      <Box p={4}>Main Content Here</Box>
     </>
   )
 }
