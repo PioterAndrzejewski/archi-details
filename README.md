@@ -41,6 +41,7 @@ App was created using following technologies and tools:
 3. TypeScript,
 4. Redux,
 5. Firebase,
+6. ChakraUI,
 
 
 ---
