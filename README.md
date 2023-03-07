@@ -88,8 +88,11 @@ To be continued...
 2) Kick-off meeting with mentor about the project ✔️ 1.03.2023
 3) Prepare a schedule, make it public in Readme ✔️3.03.2023
 4) Decide about core libraries and technologies used in project ✔️ 1.03.2023
+    📝 06.03.2023 issues with UI libraries compatibility with Next13 - decided to use ChakraUI.
 5) Setup project environment, make first commit ✔️ 3.03.2023
 6) Create landing-page template 🔵 07.03.2023
+    📝 06.03.2023 - created navBar
+    📝 07.03.2023 - created footer, hero, categories carousel, recent activity section,
 
 ### 6.03.2023 - 12.03.2023
 
