@@ -18,7 +18,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 
-import { Logo } from './Logo'
+import { Logo } from '../logo/Logo'
 
 const Links = ['Dashboard', 'Projects', 'Team']
 
