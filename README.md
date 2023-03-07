@@ -88,7 +88,7 @@ To be continued...
 3) Prepare a schedule, make it public in Readme ✔️3.03.2023
 4) Decide about core libraries and technologies used in project ✔️ 1.03.2023
 5) Setup project environment, make first commit ✔️ 3.03.2023
-6) Create landing-page template 🟡
+6) Create landing-page template 🔵 07.03.2023
 
 ### 6.03.2023 - 12.03.2023
 
