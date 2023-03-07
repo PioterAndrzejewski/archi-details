@@ -1,8 +1,15 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import { Button, HStack, Tag, TagLabel, VStack } from '@chakra-ui/react';
-
+import {
+  Button,
+  Container,
+  Container,
+  HStack,
+  Tag,
+  TagLabel,
+  VStack,
+} from '@chakra-ui/react';
 const categoriesToRender = [
   'this is sample category 1',
   'this is sample category 2',
@@ -58,56 +65,63 @@ function Demo({ datas }: { datas: string[] }) {
   };
 
   return (
-    <VStack align='flex-start'>
-      <HStack
-        sx={{
-          maxWidth: '100vw',
-        }}
-      >
-        <Button
-          onClick={() => {
-            slide(-400);
-          }}
-          isDisabled={scrollX === 0}
-        >
-          {'<'}
-        </Button>
+    <Container minWidth='100%' bg='gray.50' paddingY='50px'>
+      <VStack align='center'>
         <HStack
-          spacing={4}
-          overflowX='auto'
-          ref={container}
-          onScroll={scrollCheck}
           sx={{
-            touchAction: 'none',
-            scrollBehavior: 'smooth',
-            '::-webkit-scrollbar': {
-              display: 'none',
-            },
+            maxWidth: '90vw',
           }}
         >
-          {datas.map((data: string, index) => (
-            <Tag
-              flexShrink='0'
-              size='md'
-              key={index}
-              borderRadius='full'
-              variant='solid'
-              colorScheme='green'
-            >
-              <TagLabel>{data}</TagLabel>
-            </Tag>
-          ))}
+          <Button
+            size='sm'
+            colorScheme='blue'
+            onClick={() => {
+              slide(-400);
+            }}
+            isDisabled={scrollX === 0}
+          >
+            {'<'}
+          </Button>
+          <HStack
+            spacing={4}
+            overflowX='auto'
+            ref={container}
+            onScroll={scrollCheck}
+            sx={{
+              touchAction: 'none',
+              scrollBehavior: 'smooth',
+              '::-webkit-scrollbar': {
+                display: 'none',
+              },
+            }}
+          >
+            {datas.map((data: string, index) => (
+              <Tag
+                flexShrink='0'
+                size='md'
+                // eslint-disable-next-line react/no-array-index-key
+                key={index}
+                borderRadius='full'
+                variant='solid'
+                colorScheme='blue'
+              >
+                <TagLabel>{data}</TagLabel>
+              </Tag>
+            ))}
+          </HStack>
+          <Button
+            size='sm'
+            colorScheme='blue'
+            onClick={() => {
+              slide(400);
+            }}
+            isDisabled={scrollEnd}
+          >
+            {'>'}
+          </Button>
         </HStack>
-        <Button
-          onClick={() => {
-            slide(400);
-          }}
-          isDisabled={scrollEnd}
-        >
-          {'>'}
-        </Button>
-      </HStack>
-    </VStack>
+      </VStack>
+    </Container>
   );
 }
 

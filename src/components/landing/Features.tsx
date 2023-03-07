@@ -1,14 +1,45 @@
+'use client';
+
 import { ReactElement } from 'react';
 import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
-import { Box, Flex, Icon, SimpleGrid, Stack, Text } from '@chakra-ui/react';
+import {
+  Box,
+  Container,
+  Flex,
+  Icon,
+  SimpleGrid,
+  Stack,
+  Text,
+} from '@chakra-ui/react';
 
 interface FeatureProps {
   title: string;
   text: string;
-  icon: ReactElement;
+  image: ReactElement;
 }
 
-const Feature = ({ title, text, icon }: FeatureProps) => (
+const featuresList = [
+  {
+    id: 0,
+    image: <Icon as={FcAssistant} w={10} h={10} />,
+    title: 'Editable DWG',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, omnis.',
+  },
+  {
+    id: 1,
+    image: <Icon as={FcDonate} w={10} h={10} />,
+    title: 'Ratings and comments',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, omnis.',
+  },
+  {
+    id: 2,
+    image: <Icon as={FcInTransit} w={10} h={10} />,
+    title: 'Over 1000+ Details',
+    text: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, omnis.',
+  },
+];
+
+const Feature = ({ title, text, image }: FeatureProps) => (
   <Stack>
     <Flex
       w={16}
@@ -20,33 +51,30 @@ const Feature = ({ title, text, icon }: FeatureProps) => (
       bg='gray.100'
       mb={1}
     >
-      {icon}
+      {image}
     </Flex>
     <Text fontWeight={600}>{title}</Text>
     <Text color='gray.600'>{text}</Text>
   </Stack>
-  );
+);
 
-export default function SimpleThreeColumns() {
+export function Features() {
   return (
-    <Box p={4}>
-      <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
-        <Feature
-          icon={<Icon as={FcAssistant} w={10} h={10} />}
-          title='Lifetime Support'
-          text='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-        />
-        <Feature
-          icon={<Icon as={FcDonate} w={10} h={10} />}
-          title='Unlimited Donations'
-          text='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-        />
-        <Feature
-          icon={<Icon as={FcInTransit} w={10} h={10} />}
-          title='Instant Delivery'
-          text='Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...'
-        />
-      </SimpleGrid>
-    </Box>
+    <Container minWidth='100%' bg='gray.100' paddingY='100px'>
+      <Container maxW='1400px' color='white'>
+        <Box p={4}>
+          <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10}>
+            {featuresList.map((feature) => (
+              <Feature
+                key={feature.id}
+                image={feature.image}
+                title={feature.title}
+                text={feature.text}
+              />
+            ))}
+          </SimpleGrid>
+        </Box>
+      </Container>
+    </Container>
   );
 }
