@@ -4,12 +4,12 @@ import { useRef, useState } from 'react';
 import {
   Button,
   Container,
-  Container,
   HStack,
   Tag,
   TagLabel,
   VStack,
 } from '@chakra-ui/react';
+
 const categoriesToRender = [
   'this is sample category 1',
   'this is sample category 2',

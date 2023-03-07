@@ -47,7 +47,7 @@ export const RecentlyAdded = () => (
   <Container minWidth='100%' bg='gray.50'>
     <Container maxW='1400px' bg='white' color='white'>
       <SimpleGrid minChildWidth='250px' spacing='40px'>
-        {recentlyAddedDetails.map((card) => (
+        {recentlyAddedDetails.map(() => (
           <DetailCard />
         ))}
       </SimpleGrid>
