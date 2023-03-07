@@ -12,7 +12,7 @@ import {
 
 export function Hero() {
   return (
-    <Stack minH='100vh' direction={{ base: 'column', md: 'row' }}>
+    <Stack minH='40vh' direction={{ base: 'column', md: 'row' }}>
       <Flex p={8} flex={1} align='center' justify='center'>
         <Stack spacing={6} w='full' maxW='lg'>
           <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
@@ -30,15 +30,15 @@ export function Hero() {
                 zIndex: -1,
               }}
             >
-              Freelance
+              Architectural
             </Text>
             <br />{' '}
             <Text color='blue.400' as='span'>
-              Design Projects
+              Design Details
             </Text>{' '}
           </Heading>
           <Text fontSize={{ base: 'md', lg: 'lg' }} color='gray.500'>
-            The project board is an exclusive resource for contract work.
+            Use and help others - become a member of the community
           </Text>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
             <Button
@@ -49,7 +49,7 @@ export function Hero() {
                 bg: 'blue.500',
               }}
             >
-              Create Project
+              Join
             </Button>
             <Button rounded='full'>How It Works</Button>
           </Stack>
